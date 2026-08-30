@@ -5,7 +5,7 @@
 Informatikstudent aus Deutschland mit Fokus auf:
 - Backend Development
 - Webentwicklung
-- Java & Python
+- JavaScript & Python
 - Software Engineering
 
 ## Aktuelle Projekte
@@ -15,7 +15,7 @@ Informatikstudent aus Deutschland mit Fokus auf:
 - React Dashboard
 
 ## Technologien
- JS/TS, Html/Css,  Java, Python, Git, SQL, Linux, Windows.
+ JS/TS, Html/Css, Python, Git, SQL, Linux, Windows.
 
 ## Kontakt
 LinkedIn: https://www.linkedin.com/in/s%C3%BCheyl-aslan-36b308324/?skipRedirect=true
