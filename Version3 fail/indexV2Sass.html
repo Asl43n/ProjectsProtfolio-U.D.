@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Basketball</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    
+    <header  class="main-header">
+        <div id="theme-toggle-container">
+            <button id="theme-toggle">🌞/🌙</button>
+        </div>
+        <h1>Basketball: Ein beliebter Sport weltweit</h1>
+
+        <p>Basketball ist eine der beliebtesten Mannschaftssportarten der Welt.<br>
+            Es wurde 1891 von James Naismith erfunden und <br> 
+            hat sich seitdem zu einer globalen Sportart entwickelt, die Millionen von Fans und Spielern begeistert.<br>
+            Basketball wird auf professioneller, universitärer und Freizeitebene gespielt.</p>
+           
+    </header>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#geschichte">Die Geschichte</a></li>
+            <li><a href="#regeln">Die Regeln</a></li>
+            <li><a href="#ausrüstung">Ausrüstung</a></li>
+            <li><a href="#ligen">Ligen</a></li>
+            <li><a href="#legenden">Legendäre Spieler</a></li>
+            <li><a href="#stadien">Berühmte Stadien</a></li>
+            <li><a href="#popkultur">Popkultur</a></li>
+            <li><a href="#beste-spiele">Beste Spiele</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#tabelle">Vergleich der Ligen</a></li>
+        </ul>
+    </nav>
+
+<main>
+    <section id="newsletter">
+            <h2>Melde dich für unseren Basketball-Newsletter an!</h2>
+            <form id="newsletter-form" class="newsletter-form">
+                <label for="email">E-Mail-Adresse:</label>
+                <input type="email" id="email" name="email" placeholder="Deine E-Mail-Adresse" required>
+                <button type="submit">Anmelden</button>
+            </form>
+            <div id="form-message" class="form-message" aria-live="polite"></div>
+        </section>
+
+        <article id="legenden" class="fade-section">
+            <h2 class="fade-in">Legendäre Basketballspieler</h2>
+            <ul class="fade-in">
+                <li><strong>Michael Jordan</strong> – 6x NBA-Champion, oft als der beste Spieler aller Zeiten angesehen.</li>
+                <li><strong>LeBron James</strong> – Noch aktiv, aber bereits als einer der größten Spieler bekannt.</li>
+                <li><strong>Kobe Bryant</strong> – Fünfmaliger NBA-Champion, bekannt für seine „Mamba Mentality“.</li>
+            </ul>
+            <img src="Bilder/michael-jordan.webp" alt="Michael Jordan Dunk" class="fade-in">
+        </article> 
+
+    <article id="stadien" class="fade-section">
+        <h2 class="fade-in">Berühmte Basketballstadien</h2>
+        <ul class="fade-in">
+            <li><strong>Madison Square Garden</strong> – Heimstätte der New York Knicks.</li>
+            <li><strong>Staples Center</strong> – Heimat der Los Angeles Lakers.</li>
+            <li><strong>United Center</strong> – Michael Jordan machte dieses Stadion berühmt.</li>
+        </ul>
+    </article>
+
+    <article id="popkultur" class="fade-section">
+        <h2 class="fade-in">Basketball und Popkultur</h2>
+        <p class="fade-in">Von Sneaker-Kultur bis Hip-Hop-Musik – Basketball prägt die Popkultur.</p>
+        <img src="Bilder/air-jordan.jpg" alt="Air Jordan Schuhe" class="fade-in">
+    </article>
+
+    <article id="beste-spiele" class="fade-section">
+        <h2 class="fade-in">Die besten Basketballspiele aller Zeiten</h2>
+        <ul class="fade-in">
+            <li><strong>NBA Finals 2016, Spiel 7</strong> – LeBron James führte die Cavaliers zu einem historischen Titel.</li>
+            <li><strong>NBA Finals 1998, Spiel 6</strong> – Michael Jordan’s letzter Wurf für die Chicago Bulls.</li>
+        </ul>
+    </article>
+
+    <section id="quiz" class="fade-section">
+        <h2 class="fade-in">Basketball-Quiz</h2>
+        <p class="fade-in">Teste dein Wissen!</p>
+        <button class="quiz-answer" data-correct="false">Michael Jordan</button>
+        <button class="quiz-answer" data-correct="false">LeBron James</button>
+        <button class="quiz-answer" data-correct="true">Wilt Chamberlain</button>
+        <p id="quiz-feedback"></p>
+    </section>
+
+
+    <section id="tabelle">
+        <h2>NBA-Standings</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Siege</th>
+                    <th>Niederlagen</th>
+                </tr>
+            </thead>
+            <tbody id="nba-teams">
+                <!-- Inhalte werden per JavaScript geladen -->
+            </tbody>
+        </table>
+    </section>
+
+    <article id="regeln" class="fade-section">
+        <img src="Bilder/Basketball_Court.jpg" alt="Basketballfeld" class="fade-in">
+        <h2 class="fade-in">Die Regeln des Basketballs</h2>
+        <p class="fade-in">
+            Basketball ist ein schnelles und dynamisches Spiel, das zwei Teams mit jeweils fünf Spielern gegeneinander antreten lässt.  
+            Ziel des Spiels ist es, den Ball durch den gegnerischen Korb zu werfen und dabei mehr Punkte als das andere Team zu erzielen.  
+            Das Spielfeld ist rechteckig, mit einem Korb auf jeder Seite in einer Höhe von 3,05 Metern.
+        </p>
+        <p class="fade-in">
+            Ein Basketballspiel besteht aus vier Vierteln von jeweils 10 Minuten (in der NBA 12 Minuten).  
+            Nach dem zweiten Viertel gibt es eine Halbzeitpause von 15 Minuten. Falls es nach der regulären Spielzeit unentschieden steht,  
+            wird das Spiel mit einer Verlängerung von fünf Minuten fortgesetzt, bis ein Sieger feststeht.
+        </p>
+        <p class="fade-in">
+            Punktevergabe:
+            <ul>
+                <li>Ein erfolgreicher Wurf innerhalb der Dreipunktelinie zählt 2 Punkte.</li>
+                <li>Ein Treffer von außerhalb der Dreipunktelinie bringt 3 Punkte.</li>
+                <li>Ein Freiwurf zählt 1 Punkt.</li>
+            </ul>
+        </p>
+        <p class="fade-in">
+            Wichtige Regeln:
+            <ul>
+                <li>Dribbeln ist erforderlich: Spieler dürfen nicht mit dem Ball in der Hand laufen (Schrittfehler).</li>
+                <li>Die Shot Clock beträgt 24 Sekunden – das Team muss innerhalb dieser Zeit einen Wurf abgeben.</li>
+                <li>Nach einem Korberfolg hat das gegnerische Team 8 Sekunden Zeit, um den Ball aus der eigenen Hälfte zu bringen.</li>
+                <li>Körperkontakt ist eingeschränkt – zu viel Kontakt kann als Foul gewertet werden.</li>
+            </ul>
+        </p>
+        <p class="fade-in">
+            Fouls und Strafen:
+            <ul>
+                <li>Ein persönliches Foul wird bei übermäßigem Körperkontakt verhängt.</li>
+                <li>Ab fünf Teamfouls pro Viertel erhält das gegnerische Team Freiwürfe.</li>
+                <li>Ein Spieler, der fünf persönliche Fouls (in der NBA sechs) begeht, scheidet aus dem Spiel aus.</li>
+            </ul>
+        </p>
+    </article>
+    
+    
+    <article id="ausrüstung" class="fade-section">
+        <img src="Bilder/Basketball_Game.jpg" alt="Basketballspiel" class="fade-in">
+        <h2 class="fade-in">Die Ausrüstung im Basketball</h2>
+        <p class="fade-in">
+            Zum Basketballspielen benötigt man relativ wenig Ausrüstung. Der wichtigste Bestandteil ist ein Basketball, 
+            der aus Leder oder Synthetikmaterial besteht und durch seine spezielle Beschichtung einen guten Grip bietet. 
+            Er muss die richtige Größe und das passende Gewicht für die jeweilige Altersklasse haben.
+        </p>
+        <p class="fade-in">
+            Ein offizielles Basketballfeld ist **28 x 15 Meter** groß und hat klar markierte Linien für Spielfeldgrenzen, 
+            die Dreierlinie, die Freiwurflinie und die Mittellinie. Die beiden Basketballkörbe sind auf einer Höhe von **3,05 Metern** befestigt 
+            und bestehen aus einem stabilen Metallring mit einem Netz.
+        </p>
+        <h3 class="fade-in">Weitere wichtige Ausrüstungsgegenstände</h3>
+        <ul class="fade-in">
+            <li><strong>Basketball-Schuhe:</strong> Sie bieten optimalen Halt, Dämpfung und Schutz für die Gelenke.</li>
+            <li><strong>Sportbekleidung:</strong> Leichte Trikots und Shorts ermöglichen maximale Bewegungsfreiheit.</li>
+            <li><strong>Schweißbänder & Knieschoner:</strong> Helfen, den Schweiß zu absorbieren und Verletzungen zu vermeiden.</li>
+            <li><strong>Basketball-Rückwand (Backboard):</strong> Besteht aus Acryl oder Glas und beeinflusst das Spiel beim Bank Shot.</li>
+            <li><strong>Trainingshilfen:</strong> Hütchen, Widerstandsbänder und Dribbeltrainer für effektives Training.</li>
+        </ul>
+        <p class="fade-in">
+            Während für ein einfaches Freizeitsportspiel ein einfacher Ball und ein Korb ausreichen, 
+            ist für professionelles oder wettbewerbsorientiertes Basketballspielen eine hochwertige Ausstattung entscheidend. 
+            Die richtige Ausrüstung sorgt für bessere Leistung, Komfort und Sicherheit auf dem Spielfeld.
+        </p>
+    </article>
+    
+
+    <article id="ligen" class="fade-section">
+        <h2 class="fade-in">Bekannte Basketball-Ligen</h2>
+        <p class="fade-in">Die bekannteste Liga ist die NBA (National Basketball Association) in den USA. <br>
+            In Europa sind die EuroLeague und die deutsche Basketball-Bundesliga (BBL) sehr bekannt.<br> 
+            Basketball wird auf der ganzen Welt gespielt und die FIBA, der internationale Basketballverband, organisiert die Weltmeisterschaften und die Olympischen Turniere.</p>
+        <div class="bottom-info fade-in">i</div>
+        <img src="Bilder/Basketball_Hoop.jpg" alt="Basketballkorb" class="fade-in">
+    </article>
+
+    <article id="frauenbasketball" class="fade-section">
+        <h2 class="fade-in">Die Entwicklung des Frauenbasketballs</h2>
+        <p class="fade-in">Frauenbasketball hat in den letzten Jahren erheblich an Bedeutung gewonnen.<br> Die WNBA (Womens National Basketball Association) wurde 1996 gegründet und hat seither stetig an Popularität zugenommen.<br>
+            Viele weibliche Spielerinnen haben beeindruckende Karrieren aufgebaut und inspirieren junge Mädchen weltweit, Basketball zu spielen.<br>
+            In Deutschland und anderen europäischen Ländern gibt es ebenfalls wachsende Ligen und Turniere für Frauenbasketball, was die Diversität und Inklusion im Sport weiter fördert.</p>
+        <img src="Bilder/Basketball_Women.jpg" alt="Frauenbasketball" class="fade-in">
+    </article>
+
+    <article id="beliebtheit" class="fade-section">
+        <h2 class="fade-in">Gründe, warum Basketball so beliebt ist</h2>
+        <ul class="fade-in">
+            <li>Basketball ist ein schnelles und spannendes Spiel.</li>
+            <li>Es erfordert sowohl körperliche als auch mentale Stärke.</li>
+            <li>Das Spiel fördert Teamarbeit und Kommunikation.</li>
+            <li>Es kann auf verschiedenen Ebenen und von fast jedem gespielt werden.</li>
+            <li>Die Athleten zeigen oft unglaubliche Fähigkeiten und Akrobatik.</li>
+        </ul>
+    </article>
+
+   <article id="tabelle">
+    <h2 class="fade-in">Vergleich der Top-Ligen</h2>
+    
+    <div class="table-container">
+        <table class="fade-in">
+            <caption>Vergleichstabelle</caption>
+            <thead>
+                <tr>
+                    <th>Liga</th>
+                    <th>Land</th>
+                    <th>Anzahl Teams</th>
+                    <th>Gegründet</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>NBA</td>
+                    <td>USA</td>
+                    <td>30</td>
+                    <td>1946</td>
+                </tr>
+                <tr>
+                    <td>EuroLeague</td>
+                    <td>Europa</td>
+                    <td>18</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>BBL</td>
+                    <td>Deutschland</td>
+                    <td>18</td>
+                    <td>1966</td>
+                </tr>
+                <tr>
+                    <td>Liga ACB</td>
+                    <td>Spanien</td>
+                    <td>18</td>
+                    <td>1983</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</article>
+
+    </article>
+
+</main>
+<footer>
+    <p>&copy; 2024 Basketball page</p>
+    <button id="scroll-top-footer">⬆️ Nach oben</button>
+</footer>
+<script src="./Script/scipts.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+// Mixins und Variablen importieren
+@use 'mixins' as *;
+@use 'variables' as *;
+
+// Globale Stile für alle Elemente
+*,
+*::after {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+// Root-Level-Variablen
+:root {
+    font-family: Arial, sans-serif;
+    /* Deklaration */
+    --main-color: rgb(255, 243, 195);
+    --secondary-color: rgb(30, 144, 255);
+
+    /* kein camel case benutzen sondern Bindestriche */
+    --basic-line-height: 1.5;
+    /*  ...  */
+}
+
+// Body-Stil
+body {
+    font-size: 16px;
+    line-height: $basic-line-height; // Basic line height variable
+}
+
+// Header-Stil
+header {
+    @include flex-center; // Mixin for flex centering
+    background-color: $main-color; // Main color variable
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    padding: 10px 200px; // Padding
+    justify-content: space-between;
+
+    // Logo-Stil
+    .logo {
+        text-decoration: none;
+        color: $secondary-color; // Secondary color variable
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.8em;
+    }
+
+    // Navigationsstil
+    .navigation {
+        display: flex;
+
+        // Links innerhalb der Navigation
+        a {
+            color: $secondary-color; // Secondary color variable
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            padding-left: $padding; // Padding variable
+
+            // Hover-Effekt für Links
+            &:hover {
+                color: $primary-color; // Primary color variable
+            }
+        }
+    }
+
+    // Menü-Umschalter-Stil (standardmäßig ausgeblendet)
+    .menu-toggle {
+        display: none;
+    }
+}
+
+// Abschnittsstil
+section {
+    padding: 100px 200px; // Padding
+}

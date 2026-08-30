@@ -1,0 +1,49 @@
+// Setzt Margin, Padding und Box-Sizing für alle Elemente und deren Pseudo-Elemente
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Entfernt die Standard-Textdekoration und erbt die Farbe für alle Links
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// Entfernt den Standard-Rahmen für Eingabefelder
+input {
+    border: none;
+}
+
+// Setzt die Tabellenrahmen auf kollabieren und entfernt den Abstand zwischen den Zellen
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// Entfernt den Standard-Rahmen und Hintergrund für Buttons und setzt den Text in Großbuchstaben
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+}
+
+// Entfernt die Standard-Aufzählungszeichen für ungeordnete Listen und setzt den Cursor auf Standard
+ul {
+    list-style: none;
+    cursor: default;
+}
+
+// Stellt sicher, dass Bilder nicht breiter als ihr Container sind und ihre Höhe proportional bleibt
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+// Stellt die Navigation als Flexbox-Container dar
+nav {
+    display: flex;
+}

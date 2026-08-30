@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./ScssStyles/style.css">
+    <script src="./index.js" defer></script>
+
+    <title>Basketball Welt</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">🏀 Basketball</a>
+        <nav class="navigation">
+            <a href="#geschichte">Geschichte</a>
+            <a href="#regeln">Regeln</a>
+            <a href="#legenden">Legenden</a>
+            <a href="#stadien">Stadien</a>
+            <a href="#ligen">Ligen</a>
+        </nav>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+    </header>
+
+    <div class="container">
+
+        <section class="main">
+            <div>
+                <h2>Willkommen in der Welt des Basketballs!<br> <span>Die  Basketball-Community</span></h2>
+                <h3>Erfahre alles über deine Lieblingsspieler, Ligen und die besten Spiele.</h3>
+                <a href="#ligen" class="main-btn">Mehr erfahren</a>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards" id="geschichte">
+            <div class="title-wrapper">
+                <h2 class="title">Die Geschichte des Basketballs</h2>
+            </div>
+            <div class="content">
+                <p>Basketball wurde 1891 von James Naismith erfunden und hat sich zu einem der beliebtesten Sportarten weltweit entwickelt.</p>
+                <img src="./Bilder/Basketball_Court.jpg" alt="Basketballfeld">
+            </div>
+        </section>
+
+        <section class="cards" id="regeln">
+            <div class="title-wrapper">
+                <h2 class="title">Die Regeln des Basketballs</h2>
+            </div>
+            <div class="content">
+                <p>Basketball wird von zwei Teams mit jeweils fünf Spielern gespielt. Ziel ist es, den Ball in den Korb des Gegners zu werfen.</p>
+                <ul>
+                    <li>Ein Wurf innerhalb der Dreipunktelinie zählt 2 Punkte.</li>
+                    <li>Ein Treffer von außerhalb der Dreipunktelinie bringt 3 Punkte.</li>
+                    <li>Ein Freiwurf zählt 1 Punkt.</li>
+                </ul>
+                <img src="./Bilder/Basketball_Game.jpg" alt="Basketballspiel">
+            </div>
+        </section>
+
+        <section class="cards" id="legenden">
+            <div class="title-wrapper">
+                <h2 class="title">Legendäre Basketballspieler</h2>
+            </div>
+            <div class="content">
+                <ul>
+                    <li><strong>Michael Jordan</strong> – 6x NBA-Champion</li>
+                    <li><strong>LeBron James</strong> – Einer der größten Spieler</li>
+                    <li><strong>Kobe Bryant</strong> – 5x NBA-Champion</li>
+                </ul>
+                <img src="./Bilder/michael-jordan.webp" alt="Michael Jordan Dunk">
+            </div>
+        </section>
+
+        <section class="cards" id="stadien">
+            <div class="title-wrapper">
+                <h2 class="title">Berühmte Basketballstadien</h2>
+            </div>
+            <div class="content">
+                <ul>
+                    <li><strong>Madison Square Garden</strong> – Heimat der New York Knicks</li>
+                    <li><strong>Crypto.com Arena</strong> – Ehemals Staples Center, Heimat der Lakers</li>
+                    <li><strong>United Center</strong> – Heimat der Chicago Bulls</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects" id="ligen">
+            <div class="title-wrapper">
+                <h2 class="title">Bekannte Basketball-Ligen</h2>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Liga</th>
+                        <th>Land</th>
+                        <th>Teams</th>
+                        <th>Gegründet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>NBA</td>
+                        <td>USA</td>
+                        <td>30</td>
+                        <td>1946</td>
+                    </tr>
+                    <tr>
+                        <td>EuroLeague</td>
+                        <td>Europa</td>
+                        <td>18</td>
+                        <td>2000</td>
+                    </tr>
+                    <tr>
+                        <td>BBL</td>
+                        <td>Deutschland</td>
+                        <td>18</td>
+                        <td>1966</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="cards contact" id="contact">
+            <div class="title-wrapper">
+                <h2 class="title">Deine Meinung zählt!</h2>
+            </div>
+
+            <form class="feedback-form">
+                <h3>Teile deine Basketball-Vorlieben</h3>
+                <label for="favorite-player">Lieblingsspieler:</label>
+                <input type="text" id="favorite-player" name="favorite-player" placeholder="Michael Jordan, LeBron James...">
+                
+                <label for="favorite-team">Lieblingsteam:</label>
+                <input type="text" id="favorite-team" name="favorite-team" placeholder="Chicago Bulls, Lakers...">
+                
+                <button type="submit">Absenden</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p class="footer-title">© 2024 Basketball Welt</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
