@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Süheyl Aslan">
+    <meta name="date" content="22.01.2025">
+    <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basketball: Ein globaler Sport</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.3/dist/split-type.min.js"></script>
+
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div >
+        <button id="theme-toggle">🌞/🌙</button>
+    </div>
+    <div id="scrollBar"></div>
+    <h1>Basketball: Ein globaler Sport</h1>
+
+    <img src="./Bilder/titel.jpg" alt="Basketballspiel">
+    <nav>
+        <ul>
+            <li><a href="#Geschichte">Geschichte des Basketballs</a></li>
+            <li><a href="#Regeln">Die Regeln des Spiels</a></li>
+            <li><a href="#Ligen">Bekannte Basketball-Ligen</a></li>
+            <li><a href="#BerühmteSpieler">Berühmte Basketball-Spieler</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article id="Geschichte">
+            <h2>Geschichte des Basketballs</h2>
+            <img src="./Bilder/John.jpg" alt="Basketball Geschichte">
+            <p>
+                Basketball wurde 1891 von Dr. James Naismith in Springfield, Massachusetts, erfunden. Ziel war es, eine Indoor-Sportart für die Wintermonate zu schaffen. Anfangs wurde mit einem Fußball und zwei Pfirsichkörben als Körbe gespielt. Das Spiel entwickelte sich rasant weiter, insbesondere mit der Gründung der NBA im Jahr 1946, die Basketball in eine globale Sportart verwandelte. Heute gibt es Millionen von Spielern weltweit und große Turniere wie die Olympischen Spiele und die FIBA-Weltmeisterschaft.
+            </p>
+        </article>
+        <article id="Regeln">
+            <h2>Die Regeln des Spiels</h2>
+            <img src="./Bilder/regel.webp" alt="Basketball Spielfeld">
+            <p>
+                Ein Basketballspiel besteht aus vier Vierteln, jeweils 10 Minuten (FIBA) oder 12 Minuten (NBA). Ziel ist es, den Ball durch den Korb des Gegners zu werfen. Ein normaler Wurf innerhalb der Drei-Punkte-Linie zählt zwei Punkte, ein Wurf außerhalb zählt drei. Zu den Grundregeln gehören das Dribbeln, Passen und Werfen, während Verstöße wie Doppeldribbeln oder Goaltending zu Ballverlust führen können. 
+                Verteidigung ist ebenso entscheidend, wobei Teams sowohl Manndeckung als auch Zonenverteidigung verwenden.
+            </p>
+        </article>
+        
+        <article id="Ligen">
+            <h2>Bekannte Basketball-Ligen</h2>
+            <img src="./Bilder/NBA-new-logo.png" alt="NBA Logo">
+            <p>
+                Die NBA (National Basketball Association) ist die bekannteste Liga der Welt und wurde 1946 gegründet. Sie hat 30 Teams und zieht die besten Spieler aus aller Welt an. In Europa ist die EuroLeague die stärkste Club-Wettbewerbsserie, während in Deutschland die Basketball-Bundesliga (BBL) als höchste nationale Liga gilt. Zudem gibt es weltweit viele bedeutende Ligen, darunter die CBA in China und die NBL in Australien.
+            </p>
+        </article>
+        <article id="BerühmteSpieler">
+            <h2>Berühmte Basketball-Spieler</h2>
+            <img src="./Bilder/Michel-Jordan.jpg" alt="Michael Jordan">
+            <p>
+                Michael Jordan gilt als der größte Basketballspieler aller Zeiten. Er gewann sechs NBA-Titel mit den Chicago Bulls und revolutionierte den Sport mit seiner Athletik und seinem Ehrgeiz. LeBron James, einer der aktuell besten Spieler, hat sich durch seine Vielseitigkeit und Führungsstärke ausgezeichnet. Kobe Bryant war bekannt für seine „Mamba-Mentalität“ und gewann fünf NBA-Meisterschaften. Neben diesen Superstars gibt es zahlreiche weitere Spieler, die den Sport geprägt haben, darunter Magic Johnson, Shaquille O’Neal und Dirk Nowitzki, der als bester europäischer Spieler der Geschichte gilt.
+            </p>
+        </article>
+        <h2>Vergleich der Top-Basketball-Ligen</h2>
+        <table class="wikitable zebra">
+            <thead>
+                <tr>
+                    <th>Liga</th>
+                    <th>Land</th>
+                    <th>Teams</th>
+                    <th>Gegründet</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>NBA</td>
+                    <td>USA</td>
+                    <td>30</td>
+                    <td>1946</td>
+                </tr>
+                <tr>
+                    <td>EuroLeague</td>
+                    <td>Europa</td>
+                    <td>18</td>
+                    <td>2000</td>
+                </tr>
+                <tr>
+                    <td>BBL</td>
+                    <td>Deutschland</td>
+                    <td>18</td>
+                    <td>1966</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="./Bilder/Arena.webp" alt="Basketball Arena">
+        <section id="newsletter">
+            <h2>Melde dich für unseren Basketball-Newsletter an!</h2>
+            <form id="newsletter-form" class="newsletter-form">
+                <label for="firstname">Vorname:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Dein Vorname" required>
+        
+                <label for="lastname">Nachname:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Dein Nachname" required>
+        
+                <label for="email">E-Mail-Adresse:</label>
+                <input type="email" id="email" name="email" placeholder="Deine E-Mail-Adresse" required>
+        
+                <button type="submit">Anmelden</button>
+            </form>
+            <div id="form-message" class="form-message" aria-live="polite"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Basketball page</p>
+        <button id="scroll-top-footer">⬆️ Nach oben</button>
+    </footer>
+</body>
+</html>

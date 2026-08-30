@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  margin: 0;           
+  padding: 0;           
+  box-sizing: border-box; 
+}
+
+html {
+  font-size: 100%;       
+  line-height: 1.5;      
+}
+
+body {
+  font-family: Arial, sans-serif; 
+  color: #333;            
+}
+
+ul,
+ol {
+  list-style: none;       
+}
+
+p{
+}
+
+a {
+  text-decoration: none;
+  color: inherit;        
+}
+
+img,
+video {
+  max-width: 100%;       
+  height: auto;          
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;   
+  margin: 0 0 0.5em 0;  
+}
+
+blockquote {
+  margin: 0;
+  padding-left: 1em;
+  border-left: 3px solid #ccc; 
+}
+
+table {
+  border-collapse: collapse; 
+  width: 100%;            
+}
+
+th, td {
+  padding: 0.5em;           
+  text-align: left;
+  border: 1px solid #ddd;   
+}
+
+button {
+  cursor: pointer;         /* Zeigt den Zeiger bei Buttons an */
+  border: none;            
+  padding: 0.5em 1em;     
+  font-size: inherit;      
+}
+a:hover, button:hover {
+    color: black; 
+}
+
+/* Header-Element  */
+header, .header {
+    z-index: 1000;            /* Setzt die Priorität des Headers im Stack */
+    position: relative;       /* Positioniert relativ, um ggf. child-Elemente absolut zu platzieren */
+}
+
+
+.main-content {
+    z-index: 1; 
+}

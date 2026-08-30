@@ -1,0 +1,137 @@
+header {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+header h1, header p {
+    text-align: center;
+    flex: 1 1 100%; 
+}
+
+nav {
+    position: relative;
+    background-color: #333; 
+    color: #fff;
+}
+nav ul {
+    display: flex;
+    flex-flow: wrap;
+    gap: 1em;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.75em 1.5em;
+    color: #ffffff;
+    border-radius: 0.5em;
+}
+
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2em; 
+}
+
+main article {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    flex: 0 1 20em; 
+}
+
+article .bottom-info {
+    position: absolute; 
+    bottom: 1em; 
+    left: 1em; 
+    background-color: #072592;
+    color: #fff; 
+    width: 3em; 
+    height: 3em; 
+    border: none; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    font-size: 0.9em; 
+    font-weight: bold;
+    cursor: pointer;  
+}
+
+article img {
+    flex:  0 1 auto; 
+}
+
+article h2 {
+    align-self: center;
+    text-align: center;
+    flex: 1 0 auto; 
+}
+
+article p, article ul {
+    align-self: center;
+    text-align: center;
+    max-width: 40em;
+    flex: 1 0 auto; 
+}
+
+article ul li {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 0.5em;
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 0.5em;
+    flex: 1 1 auto; 
+}
+
+
+article table {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 auto;
+}
+
+table thead, table tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em; 
+}
+
+table thead tr, table tbody tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+table th, table td {
+    flex: 1 1 20%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+
+
+
+
+

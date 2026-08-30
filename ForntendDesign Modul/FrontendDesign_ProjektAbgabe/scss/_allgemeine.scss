@@ -1,0 +1,301 @@
+// Importe
+@import 'mixins';
+@import 'variablen';
+
+
+// Globale Styles
+body {
+  #scrollBar {
+    @include scrlbr;    
+  }
+}
+@keyframes pulseAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* Vergrößert das Element um 10% */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+// Überschriften
+h1 {
+  text-align: center;
+  animation: pulseAnimation 2s infinite ease-in-out;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  padding: $padding;
+}
+
+// Navigation
+nav {
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  ul {
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1em;
+
+    li {
+      background: var(--box-color);
+      margin: 1%;
+      padding: $padding;
+      border: .5px dashed var(--secondary-color);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      a {
+        font-weight: bolder;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--nav-text-color-hover);
+        }
+      }
+    }
+  }
+}
+
+// Tabellen
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+  background: #fff;
+  padding: $padding;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  caption {
+    @include caption;
+  }
+
+  th, td {
+    padding: 1em 5em;
+    text-align: left;
+    border: 1px solid rgb(30, 144, 255);
+  }
+
+  th {
+    padding: 1.85em 5em;
+  }
+
+  tr {
+    &:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    &:hover {
+      background-color: #a7ebda;
+    }
+  }
+}
+
+// Formulare
+form {
+  margin-top: 2rem;
+  background: #ffffffbb;
+  padding: $padding;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  label {
+    display: inline-block;
+    font-weight: bolder;
+    margin-bottom: 1em;
+    color: #000000;
+    background-color: #ffdd00;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  #enjoy {
+    display: block;
+  }
+
+  textarea {
+    width: auto;
+    height: 5rem;
+    margin-bottom: 0.1rem;
+  }
+}
+
+
+// Artikel
+article {
+  background: #ffffffbb;
+  padding: $padding;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+thead {
+  background-color: #333;
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+h1 {
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 95%;
+}
+
+   /* Newsletter Section */
+   #newsletter {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    form {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 1rem;
+
+        label {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        input {
+            padding: 0.7rem;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #fff;
+            color: #333;
+
+            &:focus {
+                outline: none;
+                border-color: var(--secondary-color);
+                box-shadow: 0 0 5px var(--secondary-color);
+            }
+        }
+
+        button {
+            background-color: #b804ef;
+            color: #fff;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+
+            &:hover {
+                background-color: #9300d7;
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+    .form-message {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: green;
+    }
+}
+
+
+
+/* Optional: Stil für den Button */
+#theme-toggle {
+  position: relative;
+  border: none;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  color: black;
+  border-radius: 5px;
+}
+
+.dark-mode #theme-toggle {
+  background-color: #333;
+  color: white;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+
+  nav {
+      background-color: #222;
+  }
+
+  a {
+      color: #ffcc00;
+  }
+
+  button {
+      background-color: #333;
+      color: white;
+  }
+}
+/* Fix für Mobile, damit der Button nicht zu breit wird */
+@media (max-width: 425px) {
+  #theme-toggle {
+    width: fit-content; /* Verhindert, dass er zur Leiste wird */
+    min-width: 50px;
+    max-width: 150px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+.dark-mode table {
+  background-color: #222; /* Dunkler Hintergrund für die Tabelle */
+  color: white; /* Weiße Schrift */
+  border: 1px solid #555; /* Leichte Umrandung für bessere Sichtbarkeit */
+}
+
+.dark-mode th, 
+.dark-mode td {
+  background-color: #333; /* Dunklere Zellen-Hintergründe */
+  border-color: #555; /* Anpassung der Randfarbe */
+  color: white; /* Weiße Schrift */
+}
+
+.dark-mode thead {
+  background-color: #444; /* Dunkler Hintergrund für die Kopfzeile */
+  color: #ffcc00; /* Alternativ: Gelbe Schrift für bessere Sichtbarkeit */
+}
+
+.dark-mode tbody tr:nth-child(even) {
+  background-color: #2a2a2a; /* Alternierende Zeilenfarbe */
+}
+
+.dark-mode tbody tr:hover {
+  background-color: #444; /* Hover-Effekt für bessere Lesbarkeit */
+}

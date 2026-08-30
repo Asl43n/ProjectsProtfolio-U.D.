@@ -1,0 +1,28 @@
+
+
+@mixin scrlbr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%; /* Startbreite */
+    height: 10px; /* Höhe des Balkens */
+    background-color: #c534db; /* Farbe des Balkens */
+    z-index: 100; /* Stellt sicher, dass der Balken über anderen Elementen liegt */
+}
+@mixin caption {
+    font-weight: bolder;
+    margin-bottom: 1em;
+    color: #fff;
+    background-color: #c300ff;
+    padding: 0.5rem 10rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+ @mixin img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 0.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

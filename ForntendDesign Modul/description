@@ -1,0 +1,31 @@
+Semester-Modul: Frontend Design Fortgeschrittene
+Techniken
+
+Themen (des Moduls)
+1. HTML
+a. Syntax
+b. Semantik (Barrierearmut, Wartbarkeit, SEO)
+2. CSS (Wiederholung)
+a. Reset, normalize, sanitize
+b. Selektoren und Spezifität (Wartbarkeit, Robustheit)
+c. Box-Model
+d. position
+e. display: block | inline | inline-block | flex | grid
+f. Queries
+3. CSS
+a. float, shape, clip-path
+b. mask, filter
+c. transform, transition
+d. animation
+4. Sass
+a. modules
+b. variables
+c. mixins
+d. control
+5. Notationen
+a. BEM
+b. SMACSS
+c. ITCSS
+6. JavaScript
+a. js und CSS best practices
+b. animation
