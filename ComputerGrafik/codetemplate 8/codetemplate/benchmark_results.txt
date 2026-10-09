@@ -1,0 +1,12 @@
+Threads:1,Time:628,4
+Threads:2,Time:453,0
+Threads:3,Time:306,0
+Threads:4,Time:239,0
+Threads:5,Time:198,7
+Threads:6,Time:172,5
+Threads:7,Time:160,3
+Threads:8,Time:144,9
+Threads:9,Time:136,1
+Threads:10,Time:127,7
+Threads:11,Time:123,2
+Threads:12,Time:119,4
