@@ -9,10 +9,8 @@ Informatikstudent aus Deutschland mit Fokus auf:
 - Software Engineering
 
 ## Aktuelle Projekte
-- Annotationstool im Frontend
-- Task Manager App
-- REST API mit Spring Boot
-- React Dashboard
+- Annotationstool im Frontend (Charité-Projekt)
+
 
 ## Technologien
  JS/TS, Html/Css, Python, Git, SQL, Linux, Windows.
